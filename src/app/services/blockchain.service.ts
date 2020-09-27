@@ -18,6 +18,7 @@ export class BlockchainService {
   getBlocks() {
     return this.blockchainInstance.chain;
   }
+  
   minePendingTransactions() {
     this.blockchainInstance.minePendingTransactions(
       this.walletKeys[0].publicKey
